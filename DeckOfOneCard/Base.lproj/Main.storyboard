@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Card View Controller-->
@@ -20,24 +19,34 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR5-ay-498">
                                 <rect key="frame" x="249" y="20" width="102" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="SB0-LM-Yfs"/>
+                                    <constraint firstAttribute="height" constant="30" id="jdO-Rj-rR4"/>
+                                </constraints>
                                 <state key="normal" title="Draw new card"/>
                                 <connections>
                                     <action selector="drawButtonTapped:" destination="7mq-De-ZWo" eventType="touchUpInside" id="4uh-Y8-YhI"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TkV-JV-fpK">
-                                <rect key="frame" x="20" y="58" width="560" height="542"/>
+                                <rect key="frame" x="20" y="58" width="560" height="522"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TkV-JV-fpK" firstAttribute="trailing" secondItem="yaj-fN-h4t" secondAttribute="trailingMargin" id="A4g-9N-xu2"/>
-                            <constraint firstItem="TkV-JV-fpK" firstAttribute="bottom" secondItem="X56-XJ-xUx" secondAttribute="top" id="M2k-8D-jBo"/>
-                            <constraint firstItem="RR5-ay-498" firstAttribute="centerX" secondItem="TkV-JV-fpK" secondAttribute="centerX" id="bg4-gF-brx"/>
-                            <constraint firstItem="TkV-JV-fpK" firstAttribute="top" secondItem="RR5-ay-498" secondAttribute="bottom" constant="8" symbolic="YES" id="gmv-sh-GtM"/>
-                            <constraint firstItem="TkV-JV-fpK" firstAttribute="leading" secondItem="yaj-fN-h4t" secondAttribute="leadingMargin" id="qxS-VO-PyW"/>
-                            <constraint firstItem="RR5-ay-498" firstAttribute="top" secondItem="upl-5X-khv" secondAttribute="bottom" id="xIb-Kt-9sU"/>
+                            <constraint firstAttribute="trailing" secondItem="TkV-JV-fpK" secondAttribute="trailing" constant="20" id="1Rb-ZC-d4O"/>
+                            <constraint firstItem="TkV-JV-fpK" firstAttribute="top" secondItem="RR5-ay-498" secondAttribute="bottom" constant="8" id="Fjd-am-qbr"/>
+                            <constraint firstItem="RR5-ay-498" firstAttribute="centerX" secondItem="yaj-fN-h4t" secondAttribute="centerX" id="OgM-HN-HLY"/>
+                            <constraint firstItem="TkV-JV-fpK" firstAttribute="leading" secondItem="yaj-fN-h4t" secondAttribute="leading" constant="20" id="PMp-Zo-yQF"/>
+                            <constraint firstItem="RR5-ay-498" firstAttribute="top" secondItem="upl-5X-khv" secondAttribute="bottom" id="YTn-mX-mX7"/>
+                            <constraint firstItem="X56-XJ-xUx" firstAttribute="top" secondItem="TkV-JV-fpK" secondAttribute="bottom" constant="20" id="aU0-o9-lJE"/>
+                            <constraint firstItem="X56-XJ-xUx" firstAttribute="top" secondItem="TkV-JV-fpK" secondAttribute="bottom" id="xKL-TR-WAC"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="xKL-TR-WAC"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="cardImageView" destination="TkV-JV-fpK" id="2m8-hS-SGf"/>
