@@ -15,6 +15,8 @@
 		A25011401D33FE7600C4695E /* DeckOfOneCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250113F1D33FE7600C4695E /* DeckOfOneCardUITests.swift */; };
 		A250114E1D33FF5300C4695E /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250114D1D33FF5300C4695E /* CardViewController.swift */; };
 		A25011501D34035700C4695E /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A250114F1D34035700C4695E /* Card.swift */; };
+		A25011521D34055900C4695E /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011511D34055900C4695E /* CardController.swift */; };
+		A25011541D34098900C4695E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25011531D34098900C4695E /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A25011411D33FE7600C4695E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A250114D1D33FF5300C4695E /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		A250114F1D34035700C4695E /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A25011511D34055900C4695E /* CardController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		A25011531D34098900C4695E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 			children = (
 				A250111F1D33FE7600C4695E /* AppDelegate.swift */,
 				A25011231D33FE7600C4695E /* Main.storyboard */,
-				A250114D1D33FF5300C4695E /* CardViewController.swift */,
 				A250114F1D34035700C4695E /* Card.swift */,
+				A25011511D34055900C4695E /* CardController.swift */,
+				A25011531D34098900C4695E /* NetworkController.swift */,
+				A250114D1D33FF5300C4695E /* CardViewController.swift */,
 				A25011261D33FE7600C4695E /* Assets.xcassets */,
 				A25011281D33FE7600C4695E /* LaunchScreen.storyboard */,
 				A250112B1D33FE7600C4695E /* Info.plist */,
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A25011541D34098900C4695E /* NetworkController.swift in Sources */,
 				A250114E1D33FF5300C4695E /* CardViewController.swift in Sources */,
+				A25011521D34055900C4695E /* CardController.swift in Sources */,
 				A25011501D34035700C4695E /* Card.swift in Sources */,
 				A25011201D33FE7600C4695E /* AppDelegate.swift in Sources */,
 			);
