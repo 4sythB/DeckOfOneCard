@@ -1,25 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7mq-De-ZWo">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Card View Controller-->
+        <scene sceneID="es6-zw-QaX">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7mq-De-ZWo" customClass="CardViewController" customModule="DeckOfOneCard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="upl-5X-khv"/>
+                        <viewControllerLayoutGuide type="bottom" id="X56-XJ-xUx"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="yaj-fN-h4t">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RR5-ay-498">
+                                <rect key="frame" x="249" y="20" width="102" height="30"/>
+                                <state key="normal" title="Draw new card"/>
+                                <connections>
+                                    <action selector="drawButtonTapped:" destination="7mq-De-ZWo" eventType="touchUpInside" id="4uh-Y8-YhI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TkV-JV-fpK">
+                                <rect key="frame" x="20" y="58" width="560" height="542"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TkV-JV-fpK" firstAttribute="trailing" secondItem="yaj-fN-h4t" secondAttribute="trailingMargin" id="A4g-9N-xu2"/>
+                            <constraint firstItem="TkV-JV-fpK" firstAttribute="bottom" secondItem="X56-XJ-xUx" secondAttribute="top" id="M2k-8D-jBo"/>
+                            <constraint firstItem="RR5-ay-498" firstAttribute="centerX" secondItem="TkV-JV-fpK" secondAttribute="centerX" id="bg4-gF-brx"/>
+                            <constraint firstItem="TkV-JV-fpK" firstAttribute="top" secondItem="RR5-ay-498" secondAttribute="bottom" constant="8" symbolic="YES" id="gmv-sh-GtM"/>
+                            <constraint firstItem="TkV-JV-fpK" firstAttribute="leading" secondItem="yaj-fN-h4t" secondAttribute="leadingMargin" id="qxS-VO-PyW"/>
+                            <constraint firstItem="RR5-ay-498" firstAttribute="top" secondItem="upl-5X-khv" secondAttribute="bottom" id="xIb-Kt-9sU"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardImageView" destination="TkV-JV-fpK" id="2m8-hS-SGf"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HtQ-rr-ueZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="231" y="287"/>
         </scene>
     </scenes>
 </document>

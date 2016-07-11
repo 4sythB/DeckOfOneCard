@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A250111B1D33FE7600C4695E"
+               BuildableName = "DeckOfOneCard.app"
+               BlueprintName = "DeckOfOneCard"
+               ReferencedContainer = "container:DeckOfOneCard.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A250112F1D33FE7600C4695E"
+               BuildableName = "DeckOfOneCardTests.xctest"
+               BlueprintName = "DeckOfOneCardTests"
+               ReferencedContainer = "container:DeckOfOneCard.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A250113A1D33FE7600C4695E"
+               BuildableName = "DeckOfOneCardUITests.xctest"
+               BlueprintName = "DeckOfOneCardUITests"
+               ReferencedContainer = "container:DeckOfOneCard.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A250111B1D33FE7600C4695E"
+            BuildableName = "DeckOfOneCard.app"
+            BlueprintName = "DeckOfOneCard"
+            ReferencedContainer = "container:DeckOfOneCard.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A250111B1D33FE7600C4695E"
+            BuildableName = "DeckOfOneCard.app"
+            BlueprintName = "DeckOfOneCard"
+            ReferencedContainer = "container:DeckOfOneCard.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A250111B1D33FE7600C4695E"
+            BuildableName = "DeckOfOneCard.app"
+            BlueprintName = "DeckOfOneCard"
+            ReferencedContainer = "container:DeckOfOneCard.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
